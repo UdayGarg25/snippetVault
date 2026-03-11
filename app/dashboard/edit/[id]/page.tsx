@@ -3,6 +3,8 @@ import { createClient } from "@/lib/supabase/server";
 import { SnippetForm } from "@/components/snippet-form";
 import type { Snippet } from "@/types/snippet";
 
+export const dynamic = "force-dynamic";
+
 export default async function EditSnippetPage({
   params,
 }: {

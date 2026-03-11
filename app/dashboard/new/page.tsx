@@ -2,6 +2,8 @@ import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
 import { SnippetForm } from "@/components/snippet-form";
 
+export const dynamic = "force-dynamic";
+
 export default async function NewSnippetPage() {
   const supabase = await createClient();
 
